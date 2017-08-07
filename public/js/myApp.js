@@ -6,7 +6,11 @@ myApp
 .config(function(){
   //config
 })
+.controller('MyController', ['$scope', function($scope){
+  $scope.myFirstName = 'Cooking';
+}])
 .run(function(){
   //initialize
   console.log('running');
 });
+
