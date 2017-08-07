@@ -8,6 +8,7 @@ myApp
 })
 .controller('MyController', ['$scope', function($scope){
   $scope.myFirstName = 'Cooking';
+  $scope.myModel = 'Ready player one';
 }])
 .run(function(){
   //initialize

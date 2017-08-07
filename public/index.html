@@ -8,17 +8,15 @@
   <h1>{{ "Serve it up!" + "Cooking Mama!" }}</h1>
   <div>{{ "Make some pancakes!" }}</div>
   <input type="text" ng-model="myModel">
-  <div>
-    {{ myModel }}
-  </div>
-  <input type="text" ng-model="myModel">
   <div ng-controller="MyController">
     {{ myFirstName }}
+    <br>
+    <input type="text" ng-model="myModel">
+    <input type="text" ng-model="myModel">
+    <div>
+      {{ myModel }}
+    </div>
   </div>
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
   <script src="/js/myApp.js"></script>
