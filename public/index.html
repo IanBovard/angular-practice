@@ -7,6 +7,7 @@
 <body ng-app="myApp">
   <h1>{{ "Serve it up!" + "Cooking Mama!" }}</h1>
   <div>{{ "Make some pancakes!" }}</div>
+  <div>{{ "Version:" + version }}</div>
   <input type="text" ng-model="myModel">
   <div ng-controller="MyController">
     {{ myFirstName }}
@@ -19,11 +20,13 @@
     <div>
       {{ character }}
     </div>
+    <div>{{ "Version:" + version }}</div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
   <script src="/js/myApp.js"></script>
   <script src="/js/controllers.js"></script>
   <script src="/js/values.js"></script>
+  <script src="/js/constants.js"></script>
 </body>
 </html>
