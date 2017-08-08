@@ -8,10 +8,11 @@ app.use(express.static('public'));
 
 app.get('/api/movies', (req, res) => {
   let movies = [
-    { title: 'Star Wars' },
-    { title: 'Dark Tower' },
-    { title: 'Star Trek' },
-    { title: 'Guyver' }
+    { title: 'Star Wars', year: 1977 },
+    { title: 'Dark Tower', year: 2017 },
+    { title: 'Star Trek', year: 1979 },
+    { title: 'Guyver', year: 1991 },
+    { title: 'Return of the Jedi', year: 1983}
   ];
 
   return res.json(movies);

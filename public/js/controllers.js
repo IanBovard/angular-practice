@@ -13,6 +13,9 @@ angular.module('myApp')
     $scope.newBook.author = '';
   };
   $scope.movies = [];
+  $scope.search = '';
   Movies.getMovies()
-  .then((movies) => { $scope.movies = movies; });
+  .then((movies) => {
+    $scope.movies = movies;
+  });
 }]);
