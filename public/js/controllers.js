@@ -5,6 +5,12 @@ angular.module('myApp')
   $scope.myModel = 'Ready player one';
   $scope.character = mainCharacter;
   $scope.cvfResult = CharacterVersionFactory.genCharVersion();
-  $scope.books = BookService.getBooks();
+  $scope.BookService = BookService;
+  $scope.newBook = { title: '', author: '' };
+  $scope.addBook = function() {
+    BookService.addBook($scope.newBook);
+    $scope.newBook.title = '';
+    $scope.newBook.author = '';
+  };
 
 }]);
