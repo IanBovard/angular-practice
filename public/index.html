@@ -28,9 +28,15 @@
         <p>{{ book.author }}</p>
       </li>
     </ul>
-      <input type="text" placeholder="title" ng-model="newBook.title">
-      <input type="text" placeholder="author" ng-model="newBook.author">
-      <button ng-click="addBook()">Add book</button>
+    <input type="text" placeholder="title" ng-model="newBook.title">
+    <input type="text" placeholder="author" ng-model="newBook.author">
+    <button ng-click="addBook()">Add book</button>
+
+    <ul>
+      <li ng-repeat="movie in movies">
+        <h4>{{ movie.title }}</h4>
+      </li>
+    </ul>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
@@ -40,5 +46,6 @@
   <script src="/js/constants.js"></script>
   <script src="/js/factories.js"></script>
   <script src="/js/services.js"></script>
+  <script src="/js/providers.js"></script>
 </body>
 </html>

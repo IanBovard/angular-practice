@@ -1,6 +1,6 @@
 /* jshint esversion:6*/
 angular.module('myApp')
-.controller('MyController', ['$scope','CharacterVersionFactory', 'mainCharacter', 'BookService', function($scope, CharacterVersionFactory, mainCharacter, BookService){
+.controller('MyController', ['$scope','CharacterVersionFactory', 'mainCharacter', 'BookService', 'Movies', function($scope, CharacterVersionFactory, mainCharacter, BookService, Movies){
   $scope.myFirstName = 'Cooking';
   $scope.myModel = 'Ready player one';
   $scope.character = mainCharacter;
@@ -12,5 +12,7 @@ angular.module('myApp')
     $scope.newBook.title = '';
     $scope.newBook.author = '';
   };
-
+  $scope.movies = [];
+  Movies.getMovies()
+  .then((movies) => { $scope.movies = movies; });
 }]);
