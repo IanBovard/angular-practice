@@ -1,6 +1,5 @@
 /* jshint esversion:6*/
-angular.module('myApp', [/*list of dependencies*/]);
-var myApp = angular.module('myApp');
+var myApp = angular.module('myApp', [/*list of dependencies*/]);
 
 myApp
 .config(function(){
